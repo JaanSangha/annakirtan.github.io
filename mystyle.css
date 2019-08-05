@@ -19,9 +19,3 @@ body {
   padding-top: 74px;
   margin: 0 auto; /*this will cause the div to be in the center*/
 }
-
-body,html{margin:0; /* remove default margin */
-     padding:0; /* remove default padding */
-     width:100%; /* take full browser width */
-     height:100%; /* take full browser height*/
-        }
