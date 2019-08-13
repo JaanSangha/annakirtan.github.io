@@ -19,3 +19,24 @@ body {
   padding-top: 74px;
   margin: 0 auto; /*this will cause the div to be in the center*/
 }
+
+a.cd-link:link
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.cd-link:visited
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
+a.cd-link:hover
+{
+   color: #808080;
+   text-decoration: none;
+}
+a.cd-link:active
+{
+   color: #fb3f00;
+   text-decoration: none;
+}
