@@ -6,10 +6,10 @@ color :white;
 
 }
 
-.bg-lighttwo {
-background-color: /*rgb(221, 168, 247,0.6); */
-}
 
+#mainpic {
+   height: 50vh;
+}
 
 pic.center {
   margin-left:auto;
