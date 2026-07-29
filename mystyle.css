@@ -7,8 +7,105 @@ color :white;
 }
 
 
-#mainpic {
-   height: 50vh;
+.hero-header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: center 50%;
+}
+
+:root {
+  --site-navbar-height: 62px;
+}
+
+.navbar.site-navbar {
+  background-color: rgb(252, 191, 187) !important;
+  height: var(--site-navbar-height);
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
+}
+
+@media (max-width: 991.98px) {
+  .navbar.site-navbar {
+    height: auto;
+    min-height: var(--site-navbar-height);
+  }
+
+  .navbar.site-navbar > .container {
+    position: relative;
+  }
+
+  .navbar.site-navbar .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    outline: none;
+  }
+
+  .navbar.site-navbar .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: -1rem;
+    right: -1rem;
+    background-color: rgb(252, 191, 187);
+    padding: 0.25rem 1rem 0.75rem;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    z-index: 1031;
+  }
+
+  .navbar.site-navbar .navbar-nav {
+    padding-top: 0.25rem;
+  }
+
+  .navbar.site-navbar .nav-link {
+    padding: 0.7rem 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .navbar.site-navbar .nav-item:last-child .nav-link {
+    border-bottom: none;
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-right: 1rem;
+}
+
+.navbar-brand-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.navbar > .container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 992px) {
+  :root {
+    --site-navbar-height: 76px;
+  }
+
+  .navbar-brand-logo {
+    height: 54px;
+  }
+
+  .navbar > .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 pic.center {
@@ -23,8 +120,51 @@ pic.center {
 }
 
 body {
-  padding-top: 74px;
-  margin: 0 auto; /*this will cause the div to be in the center*/
+  padding-top: var(--site-navbar-height);
+  margin: 0 auto;
+}
+
+.footer-copy {
+  margin: 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.site-footer {
+  background-color: rgb(252, 191, 187);
+  padding: 1.75rem 0 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  margin-bottom: 0.85rem;
+}
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: #6b4c9a;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #4a3470;
+  text-decoration: none;
+}
+
+.footer-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 a.cd-link:link
